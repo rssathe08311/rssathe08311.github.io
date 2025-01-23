@@ -19,7 +19,14 @@
     <title>Simple AR Scene</title>
   </head>
   <body style="margin: 0; overflow: hidden;">
-      <a-scene embedded arjs vr-mode-ui="enabled: false" raycaster cursor="rayOrigin: mouse" renderer="antialias: true; alpha: true">
+    <a-scene
+      embedded
+      arjs
+      vr-mode-ui="enabled: false"
+      raycaster="objects: [clickable]"
+      cursor="rayOrigin: mouse"
+      renderer="antialias: true; alpha: true"
+    >
       <!-- Marker -->
       <a-marker preset="hiro">
         <!--<a-box 
@@ -31,7 +38,7 @@
         <a-entity
           position="0 0 0"
           scale="0.05 0.05 0.05"
-          gltf-model="/simple-ar-scene/scene/scene.gltf" 
+          gltf-model="/simple-ar-scene/scene/scene.gltf"
           clicker
         ></a-entity>
         <!--<a-sphere position="0 0.5 0" radius="0.5" color="red"></a-sphere>-->
