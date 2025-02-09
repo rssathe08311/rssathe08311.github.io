@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
 # File Created: 06.09.2012 02:28:00
 
-newmtl graound
+newmtl ground
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -26,9 +26,8 @@ newmtl beach_Ball
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka beachBallTexture.jpg
-	map_Kd beachBallTexture.jpg
-
+	map_Ka E:/work/3D models/BeachChair/textures/beachBallTexture.jpg
+	map_Kd E:/work/3D models/BeachChair/textures/beachBallTexture.jpg
 
 newmtl beachChair_wood
 	Ns 32.0000
@@ -41,8 +40,8 @@ newmtl beachChair_wood
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.2610 0.2610 0.2610
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\work\3D models\BeachChair\textures\beachChair-wood.jpg
-	map_Kd E:\work\3D models\BeachChair\textures\beachChair-wood.jpg
+	map_Ka E:/work/3D models/BeachChair/textures/beachChair-wood.jpg
+	map_Kd E:/work/3D models/BeachChair/textures/beachChair-wood.jpg
 
 newmtl beachchair_cloth
 	Ns 18.0000
@@ -55,8 +54,8 @@ newmtl beachchair_cloth
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.1710 0.1710 0.1710
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\work\3D models\BeachChair\textures\beachChair-cloth.jpg
-	map_Kd E:\work\3D models\BeachChair\textures\beachChair-cloth.jpg
+	map_Ka E:/work/3D models/BeachChair/textures/beachChair-cloth.jpg
+	map_Kd E:/work/3D models/BeachChair/textures/beachChair-cloth.jpg
 
 newmtl beachChair_holders
 	Ns 83.0000
