@@ -26,8 +26,9 @@ newmtl beach_Ball
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\work\3D models\BeachChair\textures\beachBallTexture.jpg
-	map_Kd E:\work\3D models\BeachChair\textures\beachBallTexture.jpg
+	map_Ka beachBallTexture.jpg
+	map_Kd beachBallTexture.jpg
+
 
 newmtl beachChair_wood
 	Ns 32.0000
