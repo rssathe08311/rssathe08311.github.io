@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- A-Frame -->
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <!-- we use three.js to handle raycasting -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex.js"></script>
-    <!-- AR.js A-Frame components -->
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.min.js"></script>
-    
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+        
     <title>Minor Project Part III</title>
   </head>
   <body style="margin: 0; overflow: hidden;">
 
-    <a-scene vr-mode-ui="enabled: false" 
-         arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
-         renderer="useLegacyLights: false; antialias: true; alpha: true">
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
         <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: 43.08744275749556; longitude: -77.65843304251953" scale="5 5 5"></a-entity>
+
         <!--<a-entity position="0 0 0"
             scale="0.05 0.05 0.05"
             obj-model="obj: url(./model/BeachChair.Obj); mtl: url(./model/BeachChair.mtl)"
@@ -24,7 +20,7 @@
         </a-entity>-->
     </a-scene>
     
-      <a-entity camera></a-entity>
+      <!--<a-entity camera></a-entity>-->
     </a-scene>
   </body>
 </html>
