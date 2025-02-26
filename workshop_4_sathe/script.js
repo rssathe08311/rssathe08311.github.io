@@ -4,7 +4,7 @@ const fetchPlacesFromOSM = async (latitude, longitude) => {
     const radius = 1000; // radius in meters
     const query = `
         [out:json];
-        node["historic"="monument"](around:${radius},${latitude},${longitude});
+        node["amenity"="cafe"](around:${radius},${latitude},${longitude});
         out;
     `;
 
@@ -44,7 +44,7 @@ const loadPlaces = (places) => {
         text.setAttribute("align", "center");
         text.setAttribute("position", "0 2 0");
         entity.appendChild(text);
-
+        console.log(place.name);
         entity.addEventListener("click", () => alert(`You clicked on: ${place.name}`));
 
         scene.appendChild(entity);
