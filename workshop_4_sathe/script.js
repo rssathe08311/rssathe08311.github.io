@@ -12,13 +12,13 @@ const loadPlaces = () => {
         const entity = document.createElement("a-entity");
 
         entity.setAttribute("gps-entity-place", `latitude: ${place.latitude}; longitude: ${place.longitude}`);
-        entity.setAttribute("geometry", "primitive: sphere; radius: 1");
+        entity.setAttribute("geometry", "primitive: sphere; radius: .5");
         entity.setAttribute("material", "color: blue");
 
         const text = document.createElement("a-text");
         text.setAttribute("value", place.name);
         text.setAttribute("align", "center");
-        text.setAttribute("position", "0 2 0");
+        text.setAttribute("position", "0 1 0");
         entity.appendChild(text);
 
         entity.addEventListener("click", () => alert(`You clicked on: ${place.name}`));
